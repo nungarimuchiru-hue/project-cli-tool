@@ -1,0 +1,18 @@
+{
+    "users": [
+        {
+            "name": "Alex",
+            "projects": [
+                {
+                    "title": "CLI Tool",
+                    "tasks": [
+                        {
+                            "title": "Build backend",
+                            "completed": true
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
