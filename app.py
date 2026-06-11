@@ -6,6 +6,24 @@ import os
 DATA_FILE = "data.json"
 
 
+class Task:
+    def __init__(self, title):
+        self.title = title
+        self.completed = False
+
+
+class Project:
+    def __init__(self, title):
+        self.title = title
+        self.tasks = []
+
+
+class User:
+    def __init__(self, name):
+        self.name = name
+        self.projects = []
+
+        
 # Load data from file
 def load_data():
     # If file does not exist, return empty structure
@@ -22,7 +40,7 @@ def save_data(data):
     # Write updated data back to file
     with open(DATA_FILE, "w") as file:
         json.dump(data, file, indent=4)
-        
+
 # Add a new user
 def add_user(name):
     data = load_data()
